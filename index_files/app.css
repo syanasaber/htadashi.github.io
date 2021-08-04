@@ -18,13 +18,8 @@
     position: sticky;
 }
 
-.scrollable .sticky.col {
-  position: -webkit-sticky;
-  	position: sticky;
-  	left: 262px;
-  	width: 262px;
-  	min-width: 262px;
-  	max-width: 262px;
+.scrollable .sticky.col:nth-child(2) {
+  left: 262;
 }
 
 .scrollable .sticky.col:nth-child(2) {
