@@ -14,6 +14,7 @@
 }
 
 .scrollable .sticky {
+	background: #333;
 	position: -webkit-sticky;
 	position: sticky;
   left: 261px;
