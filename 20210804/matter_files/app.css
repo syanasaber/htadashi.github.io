@@ -1,0 +1,22 @@
+.app-input-date {
+    width: 120px !important;
+}
+
+.scrollable.sticky-cols {
+    overflow-x: scroll;
+    max-width: 100%;/* 高さは成り行き */
+}
+
+.scrollable.sticky-cols > table {
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: max-content;
+}
+
+.scrollable .sticky {
+    position: sticky;
+}
+
+.scrollable .sticky.col {
+    left: 0;
+}
