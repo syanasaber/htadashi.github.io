@@ -21,10 +21,10 @@
 .scrollable .sticky.col {
   position: -webkit-sticky;
   	position: sticky;
-  	left: 125px;
-  	width: 125px;
-  	min-width: 125px;
-  	max-width: 125px;
+  	left: 262px;
+  	width: 262px;
+  	min-width: 262px;
+  	max-width: 262px;
 }
 
 .scrollable .sticky.col:nth-child(2) {
