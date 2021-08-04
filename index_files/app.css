@@ -19,7 +19,7 @@
 
 .scrollable .sticky.col {
       position: sticky;
-    left: 0;
+    left: 120px;
 }
 
 .scrollable .sticky.col:before {
