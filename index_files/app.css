@@ -19,13 +19,7 @@
     position: sticky;
 }
 
-.scrollable .sticky.col:nth-child(3) {
-  left: 262;
-}
 
-.scrollable .sticky.col:nth-child(2) {
-	left: 137;
-}
 
 
 .scrollable .sticky.col:first-child {
