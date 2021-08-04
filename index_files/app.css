@@ -14,17 +14,14 @@
 }
 
 .scrollable .sticky {
-	border: solid 3px yellow;
-  background-color:#cccccc;
-    position: sticky;
+	position: -webkit-sticky;
+	position: sticky;
+  left: 262px;
 }
 
-.scrollable .sticky.col:nth-child(3) {
-  left: 262;
-}
 
 .scrollable .sticky.col:nth-child(2) {
-	left: 137;
+	left: 137px;
 }
 
 
