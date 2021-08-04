@@ -18,6 +18,7 @@
 }
 
 .scrollable .sticky.col {
+      position: sticky;
     left: 0;
 }
 
