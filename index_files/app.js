@@ -1,6 +1,7 @@
 $(document).ready(function() {
     
-    var obj_kari = document.getElementById('');
+    var obj_kari = document.getElementById('dispStartDate').placeholder;
+    
 
     /**
      * バーガーメニュー展開
