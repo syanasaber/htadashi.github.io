@@ -2,7 +2,8 @@ $(document).ready(function() {
     
     var obj_kari = document.getElementById('dispStartDate').placeholder;
     var disDate = new Date(obj_kari);
-    var dispYear = disDate.getFullYear() + "年" + disDate.getMonth()  + "月";
+    var dispYear = disDate.getFullYear() + "年" + (disDate.getMonth() + 1)  + "月";
+    document.getElementById('topic-disp-month').value = dispYear;
     alert (dispYear);
 
     /**
