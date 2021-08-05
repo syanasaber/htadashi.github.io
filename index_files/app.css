@@ -18,11 +18,11 @@
 	position: sticky;	
 }
 
-.scrollable .sticky:nth-child(odd) {
-	background-color: black;   /* 奇数行の背景色 */
+tr td .scrollable .sticky:nth-child(odd) {
+	background-color: yellow;   /* 奇数行の背景色 */
 }
-.scrollable .sticky:nth-child(even) {
-	background-color: white;   /* 偶数行の背景色 */
+tr td .scrollable .sticky:nth-child(even) {
+	background-color: red;   /* 偶数行の背景色 */
 }
 
 
