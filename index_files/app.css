@@ -25,6 +25,10 @@ tr:nth-child(even) th {
 	background-color: #f5f5f5;   /* 偶数行の背景色 */
 }
 
+.has-background-info.is-selected {
+	background-color:black !important;
+}
+
 .scrollable .sticky.topic {
 	background-color: #3298dc !important;   /* 1行目の背景色 */
 	border: 1px solid #dbdbdb;
