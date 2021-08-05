@@ -75,3 +75,10 @@ tr:nth-child(even) th {
 .tx-center {
   text-align: center;
 }
+
+.topic-month {
+	color:#ffffff;
+	background-color: #3298dc !important;   /* 1行目の背景色 */
+	border: 1px solid #dbdbdb;
+}
+	
