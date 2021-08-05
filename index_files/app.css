@@ -38,39 +38,46 @@ tr:nth-child(even) th {
 	left:-1px;
     width: 100%;
     height: 100%;
-	border: 1px solid #dbdbdb;
+	
   }
 
 .scrollable .sticky.col:nth-child(3) {
 	left: 263px;
+	border: 1px solid #dbdbdb;
 }
 
 
 .scrollable .sticky.col:nth-child(2) {
 	left: 137px;
+	border: 1px solid #dbdbdb;
 }
 
 
 .scrollable .sticky.col:first-child {
 	left: 0;
+	border: 1px solid #dbdbdb;
 }
 
 .scrollable .sticky.vio:nth-child(3) {
 	left: 263px;
+	border: 1px solid #dbdbdb;
 }
 
 
 .scrollable .sticky.vio:nth-child(2) {
 	left: 137px;
+	border: 1px solid #dbdbdb;
 }
 
 
 .scrollable .sticky.vio:first-child {
 	left: 0;
+	border: 1px solid #dbdbdb;
 }
 
 .scrollable .sticky.blank {
 	left: 0;
+	border: 1px solid #dbdbdb;
 }
 
 .tx-center {
