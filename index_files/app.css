@@ -53,6 +53,20 @@ tr:nth-child(even) th {
 	left: 0;
 }
 
+.scrollable .sticky.vio:nth-child(3) {
+	left: 263px;
+}
+
+
+.scrollable .sticky.vio:nth-child(2) {
+	left: 137px;
+}
+
+
+.scrollable .sticky.vio:first-child {
+	left: 0;
+}
+
 .tx-center {
   text-align: center;
 }
