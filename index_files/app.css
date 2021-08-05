@@ -19,14 +19,14 @@
 }
 
 tr:nth-child(odd) th {
-	background-color: red;   /* 奇数行の背景色 */
+	background-color: #ffffff;   /* 奇数行の背景色 */
 }
 tr:nth-child(even) th {
-	background-color: yellow;   /* 偶数行の背景色 */
+	background-color: #f5f5f5;   /* 偶数行の背景色 */
 }
 
 .scrollable .sticky.vio {
-	background-color: green !important;   /* 1行目の背景色 */
+	background-color: #3298dc !important;   /* 1行目の背景色 */
 }
 
 
