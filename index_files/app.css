@@ -38,6 +38,7 @@ tr:nth-child(even) th {
 	left:-1px;
     width: 100%;
     height: 100%;
+	border: 1px solid #dbdbdb;
   }
 
 .scrollable .sticky.col:nth-child(3) {
