@@ -36,6 +36,7 @@ tr:nth-child(even) th {
     position: absolute;
 	top:-1px;
 	left:-1px;
+	border: 1px solid #dbdbdb;
     width: 100%;
     height: 100%;
 	
@@ -43,41 +44,35 @@ tr:nth-child(even) th {
 
 .scrollable .sticky.col:nth-child(3) {
 	left: 263px;
-	border: 1px solid #dbdbdb;
+	
 }
 
 
 .scrollable .sticky.col:nth-child(2) {
 	left: 137px;
-	border: 1px solid #dbdbdb;
 }
 
 
 .scrollable .sticky.col:first-child {
 	left: 0;
-	border: 1px solid #dbdbdb;
 }
 
 .scrollable .sticky.vio:nth-child(3) {
 	left: 263px;
-	border: 1px solid #dbdbdb;
 }
 
 
 .scrollable .sticky.vio:nth-child(2) {
 	left: 137px;
-	border: 1px solid #dbdbdb;
 }
 
 
 .scrollable .sticky.vio:first-child {
 	left: 0;
-	border: 1px solid #dbdbdb;
 }
 
 .scrollable .sticky.blank {
 	left: 0;
-	border: 1px solid #dbdbdb;
 }
 
 .tx-center {
