@@ -25,7 +25,7 @@ tr:nth-child(even) th {
 	background-color: #f5f5f5;   /* 偶数行の背景色 */
 }
 
-.has-background-info.is-selected {
+.is-selected {
 	background-color:black !important;
 }
 
