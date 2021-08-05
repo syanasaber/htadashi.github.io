@@ -14,17 +14,17 @@
 }
 
 .scrollable .sticky {
-	background-color: ;
 	position: -webkit-sticky;
 	position: sticky;	
 }
 
-tr:nth-child(odd) td {
-    background-color: black;   /* 奇数行の背景色 */
+.scrollable .sticky:nth-child(odd) {
+	background-color: black;   /* 奇数行の背景色 */
 }
-tr:nth-child(even) td {
-    background-color: white;   /* 偶数行の背景色 */
+.scrollable .sticky:nth-child(even) {
+	background-color: white;   /* 偶数行の背景色 */
 }
+
 
 .scrollable .sticky:before{
     content: "";
@@ -33,7 +33,6 @@ tr:nth-child(even) td {
 	left:-1px;
     width: 100%;
     height: 100%;
-	border: 1px solid #dbdbdb;
   }
 
 .scrollable .sticky.col:nth-child(3) {
