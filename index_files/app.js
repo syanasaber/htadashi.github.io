@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    
+    var obj_kari = document.getElementById('');
 
     /**
      * バーガーメニュー展開
