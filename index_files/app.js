@@ -1,7 +1,9 @@
 $(document).ready(function() {
     
     var obj_kari = document.getElementById('dispStartDate').placeholder;
-    alert (obj_kari);
+    var disDate = new Date(obj_kari);
+    var dispYear = disDate.getFullYear() + "年" + disDate.getMonth()  + "月";
+    alert (dispYear);
 
     /**
      * バーガーメニュー展開
