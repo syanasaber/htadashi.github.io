@@ -27,6 +27,7 @@ tr:nth-child(even) th {
 
 .scrollable .sticky.vio {
 	background-color: #3298dc !important;   /* 1行目の背景色 */
+	border: 1px solid #dbdbdb;
 }
 
 
