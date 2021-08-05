@@ -24,7 +24,8 @@ tr:nth-child(odd) th {
 tr:nth-child(even) th {
 	background-color: yellow;   /* 偶数行の背景色 */
 }
-tr:nth-child(2) th {
+
+.scrollable .sticky.vio {
 	background-color: blue !important;   /* 1行目の背景色 */
 }
 
