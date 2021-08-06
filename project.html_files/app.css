@@ -38,6 +38,10 @@ th.sticky.col {
 	color:black !important;
 }
 
+th.has-text-white {
+	background-color: #3298dc !important;
+}
+
 
 .scrollable .sticky:before{
     content: "";
