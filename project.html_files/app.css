@@ -1,3 +1,4 @@
+
 .app-input-date {
     width: 120px !important;
 }
@@ -14,9 +15,80 @@
 }
 
 .scrollable .sticky {
-    position: sticky;
+	position: -webkit-sticky;
+	position: sticky;
 }
 
-.scrollable .sticky.col {
-    left: 0;
+tr:nth-child(odd) th {
+	background-clip: padding-box;
+	background-color: #ffffff;   /* 奇数行の背景色 */
+}
+tr:nth-child(even) th {
+	background-clip: padding-box;
+	background-color: #f5f5f5;   /* 偶数行の背景色 */
+}
+
+.scrollable .sticky.topic {
+	background-clip: padding-box;
+	background-color: #3298dc !important;   /* 1行目の背景色 */
+	border: 1px solid #dbdbdb;
+}
+
+th.sticky.col {
+	color:black !important;
+}
+
+
+.scrollable .sticky:before{
+    content: "";
+    position: absolute;
+	top:-1px;
+	left:-1px;
+	border: 1px solid #dbdbdb;
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+.scrollable .sticky.col:nth-child(3) {
+	left: 264px;
+
+}
+.scrollable .sticky.col:nth-child(2) {
+	left: 136px;
+}
+
+
+.scrollable .sticky.col:first-child {
+	left: 0;
+}
+
+.scrollable .sticky.topic:nth-child(3) {
+	left: 264px;
+}
+
+
+.scrollable .sticky.topic:nth-child(2) {
+	left: 136px;
+}
+
+
+.scrollable .sticky.topic:first-child {
+	left: 0;
+}
+
+.scrollable .sticky.blank {
+	left: 0;
+	background-color: #3298dc !important;
+}
+
+.tx-center {
+  text-align: center;
+}
+
+.topic-month {
+	color:#ffffff !important;
+	background-color: #3298dc !important;
+	border: 1px solid #dbdbdb;
 }
