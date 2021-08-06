@@ -3,21 +3,11 @@
     width: 120px !important;
 }
 
-@media (max-width: 500px) {
-	th.has-text-white.sticky.topic {
-		width:75px !important;
-		background-color:red !important;
-	}
-	.scrollable .sticky:before{
-    content: "";
-    position: absolute;
-	top:-4px;
-	left:-4px;
-	border: 1px solid #dbdbdb;
-    width: 80%;	
-  }
+th.has-text-white.sticky.topic {
+	width:120px !important;
+	background-color:red !important;
 }
-
+	
 .scrollable.sticky-cols {
     overflow-x: scroll;
     max-width: 100%;/* 高さは成り行き */
@@ -53,8 +43,8 @@ th.sticky.col {
 	color:black !important;
 }
 
-@media (min-width: 500px){
-	.scrollable .sticky:before{
+
+.scrollable .sticky:before{
     content: "";
     position: absolute;
 	top:-1px;
@@ -64,7 +54,6 @@ th.sticky.col {
     height: 100%;
 	
   }
-}
 
 
 .scrollable .sticky.col:nth-child(3) {
