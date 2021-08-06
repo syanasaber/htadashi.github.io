@@ -33,6 +33,9 @@ tr:nth-child(even) th:before {
 	border: 1px solid #dbdbdb;
 }
 
+th .sticky.col {
+	color:#000000;
+}
 
 
 .scrollable .sticky:before{
