@@ -38,9 +38,16 @@ $(document).ready(function() {
         });
     }
 
-    /**
+     /**
      * テーブルクリックで色を付ける
      */
+    $("#data_table tr").on("click",function(){
+        if ($(this).hasClass("is-selected")) {
+            $(this).removeClass("is-selected");
+        } else {
+            $(this).addClass("is-selected");
+        }
+    });
    
 var txt = "";
     /**
