@@ -3,6 +3,12 @@
     width: 120px !important;
 }
 
+@media (max-width: 500px) {
+	th[colspan="1"]{
+		width:50px;
+	}
+}
+
 .scrollable.sticky-cols {
     overflow-x: scroll;
     max-width: 100%;/* 高さは成り行き */
