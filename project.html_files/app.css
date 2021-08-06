@@ -52,11 +52,11 @@ th.sticky.col {
 
 
 .scrollable .sticky.col:nth-child(3) {
-	left: 155px;
+	left: 154px;
 
 }
 .scrollable .sticky.col:nth-child(2) {
-	left: 51px;
+	left: 50px;
 }
 
 
@@ -65,12 +65,12 @@ th.sticky.col {
 }
 
 .scrollable .sticky.topic:nth-child(3) {
-	left: 155px;
+	left: 154px;
 }
 
 
 .scrollable .sticky.topic:nth-child(2) {
-	left: 51px;
+	left: 50px;
 }
 
 
