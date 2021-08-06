@@ -73,6 +73,7 @@ tr:nth-child(even) th {
 
 .scrollable .sticky.blank {
 	left: 0;
+	background-color: #3298dc !important;
 }
 
 .tx-center {
@@ -81,7 +82,7 @@ tr:nth-child(even) th {
 
 .topic-month {
 	color:#ffffff !important;
-	background-color: #3298dc !important;   /* 1行目の背景色 */
+	background-color: #3298dc !important;
 	border: 1px solid #dbdbdb;
 }
 	
