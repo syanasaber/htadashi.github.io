@@ -34,7 +34,7 @@ tr:nth-child(even) th {
 }
 
 th .sticky.col {
-	color:#000000;
+	color:#000000 !important;
 }
 
 
