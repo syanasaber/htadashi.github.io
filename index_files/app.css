@@ -18,17 +18,7 @@
 	position: sticky;	
 }
 
-tr:nth-child(odd) th {
-	background-color: #ffffff;   /* 奇数行の背景色 */
-}
-tr:nth-child(even) th {
-	background-color: #f5f5f5;   /* 偶数行の背景色 */
-}
 
-.scrollable .sticky.topic {
-	background-color: #3298dc !important;   /* 1行目の背景色 */
-	border: 1px solid #dbdbdb;
-}
 
 
 .scrollable .sticky:before{
