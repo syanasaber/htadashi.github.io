@@ -5,7 +5,7 @@
 
 @media (max-width: 500px) {
 	th.has-text-white.sticky.topic {
-		width:65px !important;
+		width:75px !important;
 		background-color:red !important;
 	}
 	.scrollable .sticky:before{
