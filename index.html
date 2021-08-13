@@ -162,13 +162,21 @@
                     <a class="button is-info is-fullwidth">戻す</a>
                 </div>
                 <div class="column">
-                    <a class="button is-info is-fullwidth">テンプレートに保存</a>
+                    <a class="button is-info is-fullwidth"　onclick="document.getElementById('dialog').show();">テンプレートに保存</a>
                 </div>
                 <div class="column">
                     <a class="button is-info is-fullwidth">完了</a>
                 </div>
             </div>
         </div>
+
+        <dialog id="dialog" class="dialog_style" >
+                        「ダイアログの中身の文章（任意）」
+ 　           <button class="form__btn" onclick="document.getElementById('dialog').close();">
+                       「ダイアログを閉じる」
+              </button>
+        </dialog>
+        
         <div class="column is-outlined">
             <p>担当者：　下野圭子　利根川洋一</p>
         </div>
