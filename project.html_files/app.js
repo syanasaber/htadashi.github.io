@@ -89,7 +89,7 @@ var txt = "";
     });
     
     $.contextMenu({
-        selector: '#data_table tbody th',
+        selector: '#clientList #data_table tbody th',
         callback: function(key, options) {
             var m = "clicked: " + key;
             window.console && console.log(m) || alert(m + txt);
