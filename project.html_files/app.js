@@ -40,7 +40,7 @@ $(document).ready(function() {
   
     $("#test").on("click",function(){
       alert('てすと');
-      $('#testDialog').removeClass("d-none");
+     document.getElementById('dialog').show();
     });
 
     /**
