@@ -137,23 +137,6 @@
     </div>
     <!-- /上部コントロール領域 -->
     <!-- 操作パネル -->
-    <dialog id="dialog-template" class="dialog-template" >
-              <button class="button is-info is-fullwidth" onclick="document.getElementById('dialog-template').close();">
-                       ダイアログを閉じる
-              </button>
-            <div class="field" style="margin-top:10px;">
-                <div class="control">
-                    <input class="input" type="text" placeholder="テンプレート名" width="70px">
-                </div>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  マイテンプレートに保存
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  フォーマットテンプレート
-                </button>
-            </div>
-　           
-    </dialog>
     
     <div class="columns" id="panel">
         <div class="column">
@@ -196,7 +179,7 @@
             <div class="modal-card">
                 <header class="modal-card-head">
                     <p class="modal-card-title">テンプレートの保存</p>
-                    <button class="delete close-modal" aria-label="close" data-target="search-modal"></button>
+                    <button class="delete close-modal" aria-label="close" data-target="template-modal"></button>
                 </header>
                 <section class="modal-card-body">
                     <div class="field is-horizontal">
@@ -235,8 +218,8 @@
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button close-modal" data-target="search-modal">クリア</button>
-                    <button class="button close-modal" data-target="search-modal">キャンセル</button>
+                    <button class="button close-modal" data-target="template-modal">クリア</button>
+                    <button class="button close-modal" data-target="template-modal">キャンセル</button>
                 </footer>
             </div>
         </div>
