@@ -38,8 +38,8 @@ $(document).ready(function() {
         });
     }
   
-    $("#test").on("click",function(){
-     document.getElementById('dialog').show();
+    $("#saveTemplate").on("click",function(){
+     document.getElementById('dialog-template').show();
     });
 
     /**
