@@ -1,3 +1,7 @@
+function modalshow() {
+  $('#testDialog').removeClass("d-none");
+}
+
 $(document).ready(function() {
     
     var obj_kari = document.getElementById('dispStartDate').placeholder;
