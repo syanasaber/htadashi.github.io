@@ -88,7 +88,7 @@ var txt = "";
         }
     });
     
-    $.clientList({
+    $.contextMenu({
         selector: '#data_table tbody th',
         callback: function(key, options) {
             var m = "clicked: " + key;
