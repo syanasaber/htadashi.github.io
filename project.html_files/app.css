@@ -13,6 +13,17 @@ border: 5px solid #b84c00;
 border-radius: 10px;
 }
 
+.holiday{ 
+	position:absolute;
+	zIndex:1;
+margin-left: 300px;
+	margin-top: 70px;
+width: 500px;
+height: 450px;
+border: 5px solid #b84c00;
+border-radius: 10px;
+}
+
 
 
 .app-input-date {
