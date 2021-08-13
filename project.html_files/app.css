@@ -1,6 +1,10 @@
-.d-none {
-  display:none;
-}
+.tips {
+　　　　　　position: absolute;
+　　　　　　visibility:hidden;　
+  　　　　　background-color: #666666;
+  　　　　　margin-left:2%;
+  　　　　　padding:1em;
+　　}
 
 .template{ 
 	position:absolute;
