@@ -2,7 +2,7 @@
   display:none;
 }
 
-.dialog_style{ 
+.dialog-template{ 
 	position:absolute;
 	zIndex:1;
 margin-left: 300px;
