@@ -76,9 +76,47 @@
             </div>
 
         </div>
+        
+        <dialog id="dialog-holiday" class="holiday" >
+              <button class="button is-info is-fullwidth" onclick="document.getElementById('dialog-holiday').close();">
+                       ダイアログを閉じる
+              </button>
+            <div class="field" style="margin-top:15px;">
+               
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  日
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  月
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  火
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  水
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  木
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  金
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  土
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:25px;" onclick="">
+                                  キャンセル
+                </button>
+                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                  設定
+                </button>
+            </div>
+　           
+    </dialog>
+        
         <div class="column m-6">
             <div class="block">
-                <a class="button is-info is-fullwidth" href="/master/holiday_client">休日の設定</a>
+                <a class="button is-info is-fullwidth" id="set_holiday" href="/master/holiday_client">休日の設定</a>
             </div>
         </div>
     </div>
