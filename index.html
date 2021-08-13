@@ -412,6 +412,11 @@
     </div>
     <!-- /タブ -->
     
+    <span id = "menu" class="tips">
+　　　　<a href="contents1.html">Introduction</a><br>
+　　　　<a href="contents2.html">Examples</a><br>
+　　　　<a href="contents3.html">Conclusion</a>
+　　</span>
     
     <!-- データ領域 -->
     <div class="table-container scrollable sticky-cols" id="clientList">
@@ -456,7 +461,7 @@
                             <th class="sticky col-matter">
                                 看板
                             </th>
-                            <th class="sticky col-matter">
+                            <th class="sticky col-matter" onmouseover="show('menu');">
                                 &nbsp;
                             </th>
                             {% for i in range(30) %}
@@ -472,7 +477,7 @@
                             <th class="sticky col-matter">
                                 お客様？取材<br />（高橋 土井）
                             </th>
-                            <th class="sticky col-matter">
+                            <th class="sticky col-matter" onmouseover="show('menu');">
                                 角山
                             </th>
                             {% for i in range(30) %}
@@ -488,7 +493,7 @@
                             <th class="sticky col-matter">
                                 投稿13　14
                             </th>
-                            <th class="sticky col-matter">
+                            <th class="sticky col-matter" onmouseover="show('menu');">
                                 角山　平尾
                             </th>
                             {% for i in range(30) %}
