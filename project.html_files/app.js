@@ -39,7 +39,6 @@ $(document).ready(function() {
     }
   
     $("#test").on("click",function(){
-      alert('てすと');
      document.getElementById('dialog').show();
     });
 
