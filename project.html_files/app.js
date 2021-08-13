@@ -41,7 +41,7 @@ $(document).ready(function() {
     $("#test").on("click",function(){
       alert('てすと');
       $('#testDialog').removeClass("d-none");
-    }
+    });
 
     /**
      * テーブルクリックで色を付ける
