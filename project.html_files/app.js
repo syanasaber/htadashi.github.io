@@ -1,8 +1,3 @@
-function modalshow() {
-  alert('ないす');
-  $('#testDialog').removeClass('d-none');
-}
-
 $(document).ready(function() {
     
     var obj_kari = document.getElementById('dispStartDate').placeholder;
@@ -41,6 +36,11 @@ $(document).ready(function() {
             const modal = document.getElementById(modalId);
             modal.classList.toggle('is-active');
         });
+    }
+  
+    $("#test").on("click",function(){
+      alert('てすと');
+      $('#testDialog').removeClass("d-none");
     }
 
     /**
