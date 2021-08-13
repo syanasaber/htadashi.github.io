@@ -1,4 +1,5 @@
 function modalshow() {
+  alert('ないす');
   $('#testDialog').removeClass('d-none');
 }
 
