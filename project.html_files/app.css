@@ -1,6 +1,6 @@
 .tips {
 　　　　　　position: absolute;
-　　　　　　visibility:hidden;　
+　　　　　　display:none;　
   　　　　　background-color: #666666;
   　　　　　margin-left:2%;
   　　　　　padding:1em;
