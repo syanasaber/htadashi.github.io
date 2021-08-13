@@ -3,6 +3,8 @@
 }
 
 .dialog_style{ 
+	position:absolute;
+	zIndex:1;
 margin-left: 300px;
 width: 1000px;
 height: 500px;
