@@ -78,7 +78,7 @@
         </div>
         <div class="column m-6">
             <div class="block">
-                <a class="button is-info is-fullwidth" id="set_holiday" href="/master/holiday_client">休日の設定</a>
+                <a class="button is-info is-fullwidth" id="set_holiday" data-target="holiday-modal">休日の設定</a>
             </div>
         </div>
     </div>
@@ -88,6 +88,57 @@
         </div>
     </div>
 </section>
+    
+    <div class="modal" id="holiday-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">テンプレートの保存</p>
+            <button class="delete close-modal" aria-label="close" data-target="holiday-modal"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label whitespace-nowrap">テンプレート名</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-fullwidth" type="text" placeholder="テンプレート名">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                          <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                            マイテンプレートに保存
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                          <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                            テンプレートフォーマット
+                          </button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button close-modal" data-target="holiday-modal">クリア</button>
+            <button class="button close-modal" data-target="holiday-modal">キャンセル</button>
+        </footer>
+    </div>
+</div>
+<!-- テンプレートダイアログ -->
     
     <section class="hero is-info is-medium is-bold">
         <div class="hero-head">
@@ -150,6 +201,11 @@
     </section>
 
 
+    
+    
+    
+    
+    
 <section class="container">
     <!-- メッセージ領域 -->
     <!-- /メッセージ領域 -->
