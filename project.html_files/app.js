@@ -44,7 +44,6 @@ $(document).ready(function() {
     });
     
     /*ポップアップ表示　*/
-    $(function () {
         $('.tooltip').hide();
         $('th').hover(
         function () {
@@ -53,7 +52,7 @@ $(document).ready(function() {
         function () {
             $(this).children('.tooltip').fadeOut('fast');
         });
-    });
+    
     
      /*休日設定のダイアローグを表示*/
     $("#set_holiday").on("click",function(){
