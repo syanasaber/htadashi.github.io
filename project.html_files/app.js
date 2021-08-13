@@ -1,5 +1,5 @@
 function modalshow() {
-  $('#testDialog').removeClass("d-none");
+  $('#testDialog').removeClass('d-none');
 }
 
 $(document).ready(function() {
