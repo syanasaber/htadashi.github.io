@@ -24,114 +24,6 @@
 </head>
 
 <body>
-    
-    <section class="container">
-    <div class="columns">
-        <div class="column m-6">
-            <div class="block">
-                <div class="field">
-                    <p class="control">
-                        <span class="select">
-                        <select>
-                        <option>フォーマット選択</option>
-                        <option>なにかのフォーマット</option>
-                        </select>
-                      </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="column m-6">
-            <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label whitespace-nowrap">開始日：</label>
-                </div>
-                <div class="field-body">
-                    <div class="field is-narrow">
-                        <div class="control">
-                            <div class="select is-fullwidth">
-                                <select>
-                          <option>2021/07/07</option>
-                        </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label whitespace-nowrap">納品日：</label>
-                </div>
-                <div class="field-body">
-                    <div class="field is-narrow">
-                        <div class="control">
-                            <div class="select is-fullwidth">
-                                <select>
-                          <option>2021/07/07</option>
-                        </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-        <dialog id="dialog-holiday" class="holiday" >
-              <button class="button is-info is-fullwidth" onclick="document.getElementById('dialog-holiday').close();">
-                       ダイアログを閉じる
-              </button>
-            <div class="field" style="margin-top:15px;">
-               
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  日
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  月
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  火
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  水
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  木
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  金
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
-                                  土
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:25px;" onclick="">
-                                  キャンセル
-                </button>
-                <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="" href="/master/holiday_client">
-                                  休日を設定
-                </button>
-            </div>
-　           
-    </dialog>
-        
-        <div class="column m-6">
-            <div class="block">
-                <a class="button is-info is-fullwidth" id="set_holiday">休日の設定</a>
-            </div>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <a class="button is-info is-fullwidth" href="/project">スケジュール作成</a>
-        </div>
-    </div>
-</section>
-    
-    
-    
-    
-    
-    
     <section class="hero is-info is-medium is-bold">
         <div class="hero-head">
             <nav class="navbar">
@@ -245,7 +137,7 @@
     </div>
     <!-- /上部コントロール領域 -->
     <!-- 操作パネル -->
-    <dialog id="dialog-template" class="template">
+    <dialog id="dialog-template" class="dialog-template" >
               <button class="button is-info is-fullwidth" onclick="document.getElementById('dialog-template').close();">
                        ダイアログを閉じる
               </button>
@@ -288,13 +180,68 @@
                     <a class="button is-info is-fullwidth">戻す</a>
                 </div>
                 <div class="column">
-                    <a id="saveTemplate" class="button is-info is-fullwidth">テンプレートに保存</a>
+                    <a data-target="template-modal" class="button is-info is-fullwidth">テンプレートに保存</a>
                 </div>
                 <div class="column">
                     <a class="button is-info is-fullwidth">完了</a>
                 </div>
             </div>
         </div>
+
+
+
+        <!-- テンプレートダイアログ -->
+        <div class="modal" id="template-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">テンプレートの保存</p>
+                    <button class="delete close-modal" aria-label="close" data-target="search-modal"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label whitespace-nowrap">テンプレート名</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-fullwidth" type="text" placeholder="テンプレート名">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                  <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                                    マイテンプレートに保存
+                                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                  <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                                    テンプレートフォーマット
+                                  </button>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button close-modal" data-target="search-modal">クリア</button>
+                    <button class="button close-modal" data-target="search-modal">キャンセル</button>
+                </footer>
+            </div>
+        </div>
+        <!-- テンプレートダイアログ -->
+
 
       
         
