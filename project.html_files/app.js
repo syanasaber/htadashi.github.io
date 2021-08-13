@@ -38,8 +38,14 @@ $(document).ready(function() {
         });
     }
   
+    /*テンプレートのダイアローグを表示*/
     $("#saveTemplate").on("click",function(){
      document.getElementById('dialog-template').show();
+    });
+    
+     /*休日設定のダイアローグを表示*/
+    $("#set_holiday").on("click",function(){
+     document.getElementById('dialog-holiday').show();
     });
 
     /**
