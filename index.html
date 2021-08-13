@@ -247,7 +247,114 @@
         </ul>
     </div>
     <!-- /タブ -->
+    
+    
     <!-- データ領域 -->
+    <table class="table is-bordered is-striped is-hoverable" id="data_table">
+                    <thead class="whitespace-nowrap is-full">
+                      <tr class="has-background-info">
+                        <td class="has-text-white sticky blank" colspan="3">
+                        </td>
+                        <th class="topic-month" colspan="30" align="center">
+                            <input id="topic-disp-month" style="border-style:none; background-color:#3298dc;" value="" readonly>
+                        </th>
+                      </tr>
+                        <tr class="has-background-info">
+                            <th class="has-text-white sticky topic-matter" align="center" width=”136″>
+                                クライアント名
+                            </th>
+                            <th class="has-text-white sticky topic-matter" align="center" width=”125″>
+                                案件名・仕様
+                            </th>
+                            <th class="has-text-white sticky topic-matter" align="center" width=”110″>
+                                担当
+                            </th>
+                            {% for i in range(30) %}
+                            <td class="has-text-white has-text-centered">
+                                {{ i + 1}} <br />
+                                {% if i % 7 == 0 %}(月){%endif%}
+                                {% if i % 7 == 1 %}(火){%endif%}
+                                {% if i % 7 == 2 %}(水){%endif%}
+                                {% if i % 7 == 3 %}(木){%endif%}
+                                {% if i % 7 == 4 %}(金){%endif%}
+                                {% if i % 7 == 5 %}(土){%endif%}
+                                {% if i % 7 == 6 %}(日){%endif%}
+                            </td>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="sticky col-matter">
+                                エージェクト
+                            </th>
+                            <th class="sticky col-matter">
+                                看板
+                            </th>
+                            <th class="sticky col-matter">
+                                &nbsp;
+                            </th>
+                            {% for i in range(30) %}
+                            <td>
+                                &nbsp;
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            <th class="sticky col-matter">
+                                OGJ
+                            </th>
+                            <th class="sticky col-matter">
+                                お客様？取材<br />（高橋 土井）
+                            </th>
+                            <th class="sticky col-matter">
+                                角山
+                            </th>
+                            {% for i in range(30) %}
+                            <td>
+                                &nbsp;
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            <th class="sticky col-matter">
+                                TMT
+                            </th>
+                            <th class="sticky col-matter">
+                                投稿13　14
+                            </th>
+                            <th class="sticky col-matter">
+                                角山　平尾
+                            </th>
+                            {% for i in range(30) %}
+                            <td>
+                                &nbsp;
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        {% for i in range(10) %}
+                        <tr>
+                            <th class="sticky col-matter">
+                                &nbsp;
+                            </th>
+                            <th class="sticky col-matter">
+                                &nbsp;
+                            </th>
+                            <th class="sticky col-matter">
+                                &nbsp;
+                            </th>
+                            {% for i in range(30) %}
+                            <td>
+                                &nbsp;
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+    
+    
+    
     <div class="columns">
         <div class="column overflow-auto">
             <div class="table-container scrollable sticky-cols">
