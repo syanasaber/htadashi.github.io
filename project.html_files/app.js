@@ -45,12 +45,8 @@ $(document).ready(function() {
     
     /*ポップアップ表示　*/
         $('.tooltip').hide();
-        $('th').hover(
-        function () {
+        $('th').on("mouseover",function(){
             $(this).children('.tooltip').fadeIn('fast');
-        },
-        function () {
-            $(this).children('.tooltip').fadeOut('fast');
         });
     
     
