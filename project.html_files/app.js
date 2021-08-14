@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    
+    $('[data-toggle="popover"]').popover();
+	
+	
     var obj_kari = document.getElementById('dispStartDate').placeholder;
    var disDate = new Date(obj_kari);
    var dispYear = disDate.getFullYear() + "年" + (disDate.getMonth() + 1)  + "月";
