@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
 	
 	
     var obj_kari = document.getElementById('dispStartDate').placeholder;
@@ -45,14 +44,7 @@ $(document).ready(function() {
      document.getElementById('dialog-template').show();
     });
     
-    /*ポップアップ表示　*/
-    $('th').on('mouseover',function(){
-       $('.tooltip').popover(
-		{
-			content:'テストです'
-		});
-        $('.tooltip').popover('show');
-    });
+  
         
     
     
