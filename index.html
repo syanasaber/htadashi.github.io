@@ -24,15 +24,18 @@
 </head>
     
     <script language="javascript" type="text/javascript">
-        function showPopup(event) {
-          target = document.getElementById("clientList");
-                if (!event.pageX) px = event.clientX + document.body.scrollLeft; else px = event.pageX;
-      if (!event.pageY) py = event.clientY + document.body.scrollTop; else py = event.pageY;
+        function init(){
+            window.onmousemove = showPopup;
+            function showPopup(event) {
+              target = document.getElementById("clientList");
+               var px = event.clientX;
+                var py = event.clientY;
 
-        target.style.left = px + "px";
-        target.style.top = py + "px";
-         
-            target.style.visibility = "visible";
+                target.style.left = px+10 + "px";
+            target.style.top = py+5 + "px";
+
+                target.style.visibility = "visible";
+            }
         }
 
         function hidePopup() {
@@ -409,7 +412,7 @@
                             <th class="sticky col-matter">
                                 投稿13　14
                             </th>
-                            <th class="sticky col-matter" onmouseover="showPopup(event);" onmouseout="hidePopup();">
+                            <th class="sticky col-matter" onmouseover="init();" onmouseout="hidePopup();">
                                 角山　平尾
                             </th>
                            
