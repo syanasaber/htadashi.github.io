@@ -44,10 +44,14 @@ $(document).ready(function() {
     });
     
     /*ポップアップ表示　*/
-        $('.tooltip').hide();
-        $('th').on("mouseover",function(){
-            $(this).children('.tooltip').fadeIn('fast');
-        });
+    $('th').on('mouseover',function(){
+       $('.tooltip').popover(
+		{
+			content:'テストです'
+		});
+        $('.tooltip').popover('show');
+    });
+        
     
     
      /*休日設定のダイアローグを表示*/
