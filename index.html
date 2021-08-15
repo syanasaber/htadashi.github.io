@@ -24,8 +24,7 @@
 </head>
     
     <script language="javascript" type="text/javascript">
-        function init(){
-            window.onmousemove = showPopup;
+        
             function showPopup(event) {
               target = document.getElementById("popup");
                var px = event.clientX;
@@ -36,7 +35,6 @@
 
                 target.style.visibility = "visible";
             }
-        }
 
         function hidePopup() {
           target = document.getElementById("popup");
@@ -510,7 +508,7 @@
                             <th class="sticky col-matter">
                                 投稿13　14
                             </th>
-                            <th class="sticky col-matter" onmouseover="init();" onmouseout="hidePopup();">
+                            <th class="sticky col-matter" onmouseover="showPopup(event)" onmouseout="hidePopup();">
                                 角山　平尾
                             </th>
                            
