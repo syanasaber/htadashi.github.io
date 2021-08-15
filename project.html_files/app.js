@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+$('.client_dropdown').on('click focus', function () {
+	//「input」要素の「data-options」をカンマで分割し、配列にする。
+	var options = $(this).data("options").split(',');
+	
+	$(this).autocomplete({
+			source: options,
+			minLength: 0,  // 「0」を設定したら、全ての項目を表示する。
+			delay : 1,
+			autoFocus: false,
+			scroll:true,
+	　　　　　　　　position:{ my : "right top", at: "right bottom", collision: "flip" } //不具合対応
+	});
+	$(this).autocomplete("search", "");//この行を入れないと、初回にプルダウンボックス（セレクトボックス）が効かないという不具合がある
+});
 	
 	
     var obj_kari = document.getElementById('dispStartDate').placeholder;
