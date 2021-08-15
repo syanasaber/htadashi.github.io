@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$('.client_dropdown').on('click focus', function () {
+$('.free_dropdown').on('click focus', function () {
 	//「input」要素の「data-options」をカンマで分割し、配列にする。
 	var options = $(this).data("options").split(',');
 	
