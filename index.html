@@ -46,68 +46,166 @@
 
 <body>
     
-    <section class="container">
-    <!-- 上記コントロール領域 -->
+    
+   <section class="container">
     <div class="columns">
-        <div class="column m-10 is-pulled-right">
-            <div class="field is-horizontal">
-                <div class="field-body pr-1">
-                    <div class="pr-1">
-                        <a class="button is-info">保存</a>
-                    </div>
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" type="text" placeholder="アカウント名" width="500px">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" type="text" placeholder="担当者名" width="500px">
-                        </div>
-                    </div>
-                    <div class="pr-1">
-                        <a class="button is-info">追加</a>
-                    </div>
-                    <div>
-                        <a class="button is-info">削除</a>
-                    </div>
+        <div class="column m-6">
+            <div class="block">
+                <div class="field">
+                    <p class="control">
+                        <span class="select">
+                        <select>
+                        <option>フォーマット選択</option>
+                        <option>なにかのフォーマット</option>
+                        </select>
+                      </span>
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /上部コントロール領域 -->
-    <!-- データ領域 -->
-    <div class="columns">
-        <div class="column">
-            <div class="table-container">
-                <table class="table is-bordered is-striped is-hoverable is-fullwidth">
-                    <thead class="is-full is-info">
-                        <tr class="has-background-info">
-                            <td class="has-text-white">
-                                アカウント名
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for i in range(30) %}
-                        <tr>
-                            <td>
-                                TMT
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+        <div class="column m-6">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label whitespace-nowrap">開始日：</label>
+                </div>
+                <div class="field-body">
+                    <div class="field is-narrow">
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select>
+                          <option>2021/07/07</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label whitespace-nowrap">納品日：</label>
+                </div>
+                <div class="field-body">
+                    <div class="field is-narrow">
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select>
+                          <option>2021/07/07</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="column m-6">
+            <div class="block">
+                <a class="button is-info is-fullwidth show-modal" id="set_holiday" data-target="holiday-modal">休日の設定</a>
             </div>
         </div>
     </div>
-    <!-- /データ領域 -->
+
+    <div class="columns">
+        <div class="column">
+            <a class="button is-info is-fullwidth" href="/project">スケジュール作成</a>
+        </div>
+    </div>
 </section>
+
+<div class="modal" id="holiday-modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+      <header class="modal-card-head">
+          <p class="modal-card-title">休日の設定</p>
+          <button class="delete close-modal" aria-label="close" data-target="holiday-modal"></button>
+      </header>
+      <section class="modal-card-body">
+          <div class="field is-horizontal">
+              <div class="field-body">
+                  <div class="field">
+                      <div class="control">
+                        <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                          日
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="field is-horizontal">
+              <div class="field-body">
+                  <div class="field">
+                      <div class="control">
+                        <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                          月
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="field is-horizontal">
+              <div class="field-body">
+                  <div class="field">
+                      <div class="control">
+                        <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                          火
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="field is-horizontal">
+              <div class="field-body">
+                  <div class="field">
+                      <div class="control">
+                        <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                          水
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="field is-horizontal">
+              <div class="field-body">
+                  <div class="field">
+                      <div class="control">
+                        <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                          木
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="field is-horizontal">
+              <div class="field-body">
+                  <div class="field">
+                      <div class="control">
+                        <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                          金
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="field is-horizontal">
+              <div class="field-body">
+                  <div class="field">
+                      <div class="control">
+                        <button class="button is-info is-fullwidth" style="margin-top:10px;" onclick="">
+                                          土
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <footer class="modal-card-foot">
+          <button class="button close-modal" data-target="holiday-modal">設定</button>
+          <button class="button close-modal" data-target="holiday-modal">キャンセル</button>
+      </footer>
+  </div>
+</div>
     
-    
-    
-    
-    
+
     <section class="hero is-info is-medium is-bold">
         <div class="hero-head">
             <nav class="navbar">
