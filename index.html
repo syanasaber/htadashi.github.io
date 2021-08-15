@@ -477,8 +477,13 @@
                     <tbody>
                         <tr>
                             <th class="sticky col-matter">
-                                <input type="text" name="client_dropdown" value=""  placeholder="クライアント名の入力"
-				       data-options="エージェクト,OGJ,TMT"  class="free_dropdown">
+                               <input list="sample_datalist" name="sample_free_dropdown2" placeholder="得意な言語を選択">
+				    <datalist id="sample_datalist">
+				    <option value="JAVA">
+				    </option><option value="PHP">
+				    </option><option value="C#">
+				</option>
+				    </datalist>
                             </th>
                             <th class="sticky col-matter">
                                 <input type="text" name="project_dropdown" value="" placeholder="案件名の入力"
