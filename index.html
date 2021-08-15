@@ -27,8 +27,8 @@
         
             function showPopup(event) {
               target = document.getElementById("popup");
-               var px = event.screenX;
-                var py = event.screenY;
+               var px = event.clientX;
+                var py = event.clientY;
 
                 target.style.left = px-100 + "px";
             target.style.top = py+5 + "px";
